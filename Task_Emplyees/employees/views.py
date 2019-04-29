@@ -1,4 +1,3 @@
-from django.shortcuts import render
 from rest_framework import viewsets
 from .models import JobPosition, Employee
 from .api.serializers import JobPositionSerializer, EmployeeSerializer
