@@ -19,6 +19,6 @@ class Employee (models.Model):
     phone = models.BigIntegerField( validators=[MaxValueValidator(int('9'*15)), MinValueValidator(10000)],blank=False)
     date = models.DateTimeField(auto_now_add=True)
     last_update = models.DateTimeField(auto_now=True)
-    jobposition = models.ForeignKey(JobPosition, on_delete=models.CASCADE)
+    jobposition = models.ForeignKey(JobPosition, related_name="employees", on_delete=models.CASCADE)
     is_working = models.BooleanField(default=False)
     comment = models.TextField(blank=True)
