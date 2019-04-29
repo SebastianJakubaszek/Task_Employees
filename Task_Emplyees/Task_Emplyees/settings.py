@@ -78,10 +78,10 @@ WSGI_APPLICATION = 'Task_Emplyees.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'Task_Employees',
-        'USER': 'postgres',
-        'PASSWORD': 'Nowaera1',
-        'HOST': '127.0.0.1',
+        'NAME': 'wuhnpejv',
+        'USER': 'wuhnpejv',
+        'PASSWORD': 'o9YW4V-Yg07SzsZviLviHli-uGYSvH8L',
+        'HOST': 'otto.db.elephantsql.com',
         'PORT': '5432',
     }
 }
