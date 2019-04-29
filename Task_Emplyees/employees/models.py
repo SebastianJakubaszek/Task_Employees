@@ -16,7 +16,7 @@ class Employee (models.Model):
     first_name = models.CharField(max_length=30, blank=False)
     last_name = models.CharField(max_length=30, blank=False)
     email = models.CharField(max_length=30, blank=False)
-    phone = models.IntegerField( validators=[MaxValueValidator(int('9'*15)), MinValueValidator(10000)],blank=False)
+    phone = models.BigIntegerField( validators=[MaxValueValidator(int('9'*15)), MinValueValidator(10000)],blank=False)
     date = models.DateTimeField(auto_now_add=True)
     last_update = models.DateTimeField(auto_now=True)
     jobposition = models.ForeignKey(JobPosition, on_delete=models.CASCADE)
